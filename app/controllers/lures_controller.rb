@@ -22,6 +22,6 @@ class LuresController < ApplicationController
 
     private
     def lure_params
-        params.require(:lure).permit(:name, :brand, :lureType, :size, :image, :color, :favorited )
+        params.require(:lure).permit(:name, :brand, :lureType, :size, :image, :color, :favorited, :id )
     end
 end
