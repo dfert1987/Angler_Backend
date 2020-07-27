@@ -1,4 +1,6 @@
 class FishController < ApplicationController
+    before_action :find_fish_by_id, only:[:show, :update]
+
     def index
         @fish = Fish.all
         render json: @fish
@@ -9,12 +11,16 @@ class FishController < ApplicationController
     end
     
     def update
-        @fish = Fish.update(fish_params)
+        @fish.update(fish_params)
         render json: @fish
     end
-    
+
     private
     def fish_params
-        params.require(:fish).permit(:species, :description, :caught, :image, :pr, :id )
+        params.require(:fish).permit(:species, :description, :caught, :image, :pr)
+    end
+
+    def find_fish_by_id
+        @fish = Fish.find(params[:id])
     end
 end

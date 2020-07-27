@@ -1,4 +1,5 @@
 class LuresController < ApplicationController
+    before_action :find_lure_by_id, only:[:show, :update]
 
     def index
         @lures = Lure.all
@@ -6,7 +7,6 @@ class LuresController < ApplicationController
     end
 
     def show
-        @lure = Lure.find(params[:id])
         render json: @lure
     end
 
@@ -16,12 +16,16 @@ class LuresController < ApplicationController
     end
 
     def update
-        @lure = Lure.update(lure_params)
+        @lure.update(lure_params)
         render json: @lure
     end
 
     private
     def lure_params
-        params.require(:lure).permit(:name, :brand, :lureType, :size, :image, :color, :favorited, :id )
+        params.require(:lure).permit(:name, :brand, :lureType, :size, :image, :color, :favorited )
+    end
+
+    def find_lure_by_id
+        @lure = Lure.find(params[:id])
     end
 end
