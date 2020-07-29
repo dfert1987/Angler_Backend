@@ -1,11 +1,14 @@
 class LocationsController < ApplicationController
+    before_action :find_location_by_id, only:[:show, :update]
+
     def index
         @locations = Location.all
         render json: @locations
     end
 
     def show
-        render json: @fish
+        @location = Location.find(params[:id])    
+        render json: @location
     end
 
     def create
@@ -21,5 +24,9 @@ class LocationsController < ApplicationController
     private
     def location_params
         params.require(:location).permit(:name, :image, :description, :lat, :lng, :body )
+    end
+
+    def find_location_by_id
+        @location = Location.find(params[:id])
     end
 end
