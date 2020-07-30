@@ -57,7 +57,7 @@ Fish.create(species: 'White Bass', caught: false, description: 'Lives in lakes, 
 Fish.create(species: 'White Crappie', caught: false, description: 'Not native to Colorado. White crappies typically inhabit reservoirs and freshwater lakes but will also be found in ponds and slow moving rivers with bottoms of sand or mud. White crappies usually dont mind turbid or clear water. White crappie will typically reach a varied length of 6 to 20 inches and will weigh from 1 to 5 pounds. Their primary diet is mainly  zooplankton and small crustaceans as juveniles and minnows and small shads as adults.', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/White_crappie_pomoxis_annularis.jpg/800px-White_crappie_pomoxis_annularis.jpg', pr: 0 )
 Fish.create(species: 'Yellow Perch', caught: false, description: 'Found in ponds, lakes, slow moving rivers, and creeks. Yellow Perch prefer clear water closest to vegetation and tend to school together near shore. Yellow perch diet consists of a wider variety of invertebrates and smaller fish. Yellow Perch can grow up to 19.7 inches and can live up to 11 years or more.', image: 'https://upnorthlive.com/resources/media/ae2663ba-26a5-404b-9abb-3b7eccb9ce42-yellowperch250_476676_7.jpg?1439400900699', pr: 0)
 
-Trip.create(date: '5/24/2020', time_start: '8am', duration: 2, weather: 'sunny', temperature: 65, location_id: 2, description: "Good day on the water. Char biting in deep patches once they were spotted on the fish finder." )
+Trip.create(date: '5/24/2020', time_start: '8am', duration: 2, weather: 'sunny', temperature: 65, location_id: 2, description: "Good day on the water. Char biting in deep patches once they were spotted on the fish finder.", lure_id: 2, fish_id: 1)
 
 
 

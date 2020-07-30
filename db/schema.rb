@@ -54,10 +54,16 @@ ActiveRecord::Schema.define(version: 2020_07_14_160542) do
     t.string "weather"
     t.integer "temperature"
     t.integer "location_id", null: false
+    t.integer "lure_id", null: false
+    t.integer "fish_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["fish_id"], name: "index_trips_on_fish_id"
     t.index ["location_id"], name: "index_trips_on_location_id"
+    t.index ["lure_id"], name: "index_trips_on_lure_id"
   end
 
+  add_foreign_key "trips", "fish"
   add_foreign_key "trips", "locations"
+  add_foreign_key "trips", "lures"
 end

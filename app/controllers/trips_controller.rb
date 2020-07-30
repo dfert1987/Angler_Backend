@@ -1,7 +1,7 @@
 class TripsController < ApplicationController
     def index
         @trips = Trip.all
-        render json: @trips, include: [:location]
+        render json: @trips, include: [:location, :lure, :fish]
     end
 
     def show
@@ -21,6 +21,6 @@ class TripsController < ApplicationController
 
     private
     def trip_params
-        params.require(:trip).permit(:date, :weather, :description, :time, :description, :location_id)
+        params.require(:trip).permit(:date, :weather, :description, :time, :description, :location_id, :lure_id, :fish_id)
     end
 end

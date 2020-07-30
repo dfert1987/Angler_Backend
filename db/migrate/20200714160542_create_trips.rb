@@ -9,6 +9,8 @@ class CreateTrips < ActiveRecord::Migration[6.0]
       t.string :weather
       t.integer :temperature
       t.references :location, null: false, foreign_key: true
+      t.references :lure, null: false, foreign_key:true
+      t.references :fish, null: false, foreign_key:true
 
       t.timestamps
     end
