@@ -5,12 +5,12 @@ Fish.destroy_all
 Trip.destroy_all
 Location.destroy_all
 
-Lure.create(name: "Curly Tail Grub", brand: "Mister Twister", lureType: 'Soft Plastic', color: 'Yello', size: 'S', favorited: false, image: 'https://www.fieldandstream.com/resizer/HOrncvzIuLz_0k_NX9-mrsWzN_c=/762x356/arc-anglerfish-arc2-prod-bonnier.s3.amazonaws.com/public/QHLXPA7MGFVA4TILLGLVXTT24A.jpg')
-Lure.create(name: "Spinnie", brand: "Dardevle", lureType: 'Spoon', color: 'Red', size: 'M', favorited: false, image: 'https://www.fieldandstream.com/resizer/1zGS8uFO1QisR2fNaHJjdFLgFLg=/762x276/arc-anglerfish-arc2-prod-bonnier.s3.amazonaws.com/public/4VLVG34SSKBTJ7ZRKCZ6NNAU2I.jpg')
-Lure.create(name: "Original Floater", brand: "Rapala", lureType: 'Top Water', color: 'Gray', size: 'L', favorited: false, image:'https://www.fieldandstream.com/resizer/QtJxTbBzzdtnM7dB8V-irZ4YOTI=/762x296/arc-anglerfish-arc2-prod-bonnier.s3.amazonaws.com/public/K6SPG5H4C6G7UAL7XVRNVUJWHA.jpg')
-Lure.create(name: "Agila", brand: "Mepps", lureType: 'Spinner', color: 'Gold', size: 'S', favorited: false, image: 'https://www.fieldandstream.com/resizer/L89gvtqhCYWNb2AcqzwlrfRp0K4=/762x374/arc-anglerfish-arc2-prod-bonnier.s3.amazonaws.com/public/T275MAXF6O6PPN46B43OY2PZH4.jpg')
-Lure.create(name: "Bleeding Shad", brand: "Rat-L-Trap", lureType: 'Crank', color: 'blue', size: 'M', favorited: false, image:'https://www.fieldandstream.com/resizer/Grlki-2YlXcEv-qq1JEU5jw9fo0=/762x462/arc-anglerfish-arc2-prod-bonnier.s3.amazonaws.com/public/EIRZWLCIC4QAX2HWIK6M2YKKHQ.jpg')
-Lure.create(name: "Spook", brand: "Zara", lureType: 'Top Water', color: 'Silver / Blue', size: 'L', favorited: false, image:'https://www.fieldandstream.com/resizer/de_f6BlDy-UdC2Q_jhXQw9acC1s=/762x332/arc-anglerfish-arc2-prod-bonnier.s3.amazonaws.com/public/D6BUNVYFTK7VYDZ3C4JL6WEVTM.jpg')
+Lure.create(name: "Curly Tail Grub", brand: "Mister Twister", lureType: 'Soft Plastic', color: 'Yello', size: 'S', favorited: false, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxUiuvleW8aenwOpSW9pbXGS-ofsMnfoWMgacpry5TLzfl9QaTCtpGNsm4ImfZT7wFzMVy_jQ&usqp=CAc')
+Lure.create(name: "Spinnie", brand: "Dardevle", lureType: 'Spoon', color: 'Red', size: 'M', favorited: false, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFqpQ6ahzTblHXxsVWBz_cYvYu5wPbNMrCoA&usqp=CAU')
+Lure.create(name: "Original Floater", brand: "Rapala", lureType: 'Top Water', color: 'Gray', size: 'L', favorited: false, image:'https://www.landbigfish.com/images/store/swatches/F07_S_HERO.jpg')
+Lure.create(name: "Agila", brand: "Mepps", lureType: 'Spinner', color: 'Gold', size: 'S', favorited: false, image: 'https://www.mepps.com/include/classes/dsimage.php?w=1600&h=800&q=90&src=/products/images/final/aglia/b3g.jpg')
+Lure.create(name: "Bleeding Shad", brand: "Rat-L-Trap", lureType: 'Crank', color: 'blue', size: 'M', favorited: false, image:'https://cdn.shopify.com/s/files/1/0063/8160/0841/products/bill-lewis-rat-l-trap-bleeding-shad-37_600x.jpg?v=1588631960')
+Lure.create(name: "Spook", brand: "Zara", lureType: 'Top Water', color: 'Silver / Blue', size: 'L', favorited: false, image:'https://cdn.shopify.com/s/files/1/0030/2694/4069/products/x9256_bonsl_520x.jpg?v=1588272898')
 
 
 Location.create(name: "Lake Granby", description: 'The third largest body of water in Colorado offers great views and killer slamon and trout fishing.', body: 'Reservoir', lat: 40.1481,lng: -105.8658, image:'https://odis.homeaway.com/odis/listing/c8a9820c-c11e-4fd2-a054-fae99634e263.c10.jpg' )
